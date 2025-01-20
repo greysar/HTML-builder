@@ -15,7 +15,7 @@ rl.setPrompt(initialText);
 rl.prompt();
 
 rl.on('line', (inputText) => {
-    if (inputText === '.exit') {
+    if (inputText === 'exit') {
         rl.close()
     } else {
         writeStream.write(inputText + '\n', false)
